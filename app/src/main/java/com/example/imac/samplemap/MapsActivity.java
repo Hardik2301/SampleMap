@@ -141,11 +141,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 switch (eventaction) {
                     case MotionEvent.ACTION_DOWN:
                         mlist.clear();
-
-                    case MotionEvent.ACTION_MOVE:
                         if (Is_MAP_Moveable) {
                             mMap.clear();
                         }
+                    case MotionEvent.ACTION_MOVE:
+                        /*if (Is_MAP_Moveable) {
+                            mMap.clear();
+                        }*/
                         // finger moves on the screen
                         mlist.add(new LatLng(latitude, longitude));
                         Draw_Polyline();
