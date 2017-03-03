@@ -188,6 +188,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         PolygonOptions rectOptions = new PolygonOptions();
         rectOptions.addAll(mlist);
         rectOptions.strokeColor(Color.BLACK);
+        rectOptions.fillColor(0x7F000000);
         mPolygon=mMap.addPolygon(rectOptions);
         addMarkerOnPolygon(mPlacelist);
     }
